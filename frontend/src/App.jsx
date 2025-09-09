@@ -5,7 +5,7 @@ function App() {
   const [text, setText] = useState();
 
   useEffect(() => {
-    // call api: GetAllRestaurants
+    // call api
     fetch("http://localhost:5000/api/hello")
       .then((res) => {
         // convert to json format

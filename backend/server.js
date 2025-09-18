@@ -13,6 +13,10 @@ app.get("/api/hello", (req, res) => {
   res.json({ message: "Hello World from server" });
 });
 
+const coffeeRouter = require("./routers/coffeeRouter");
+
+app.use("/api/v1/coffee", coffeeRouter);
+
 app.listen(PORT, () =>
   console.log(`Server is running on http://localhost:${PORT}`)
 );
